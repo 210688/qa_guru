@@ -13,7 +13,6 @@ public class SearchTests {
         $("[name=q]").setValue("selenide").pressEnter();
         $("[id=search]").shouldHave(text("https://ru.selenide.org"));
     }
-
     @Test
     void successfulSearchMosRu() {
         open("https://www.google.com/");
