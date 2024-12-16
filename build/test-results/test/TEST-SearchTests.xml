@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SearchTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-16T18:34:11" hostname="WIN-JG2J35FIO8M" time="5.034">
+<testsuite name="SearchTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-12-16T18:59:15" hostname="WIN-JG2J35FIO8M" time="9.462">
   <properties/>
-  <testcase name="successfulSearchTest()" classname="SearchTests" time="5.034"/>
+  <testcase name="successfulSearchTest()" classname="SearchTests" time="4.743"/>
+  <testcase name="successfulSearchMosRuViaYandex()" classname="SearchTests" time="2.203"/>
+  <testcase name="successfulSearchMosRu()" classname="SearchTests" time="2.515"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-дек. 16, 2024 9:34:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+дек. 16, 2024 9:59:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 131
-дек. 16, 2024 9:34:13 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+дек. 16, 2024 9:59:17 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 131.0.6778.140. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>
