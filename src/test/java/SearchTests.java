@@ -32,6 +32,7 @@ public class SearchTests {
         open("https://ya.ru/");
         $("[name=text]").setValue("mos ru").pressEnter();
         $("[id=search-result]").shouldHave(text("Официальный сайт Мэра Москвы"));
+
     }
 }
 
