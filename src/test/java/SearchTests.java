@@ -26,6 +26,7 @@ public class SearchTests {
         $("[name=q]").setValue("mos ru").pressEnter();
         $("[id=search]").shouldHave(text("Официальный сайт Мэра Москвы"));
     }
+
     @Test
     void successfulSearchMosRuViaYandex() {
         open("https://ya.ru/");
