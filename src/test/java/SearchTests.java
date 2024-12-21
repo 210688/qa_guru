@@ -2,6 +2,9 @@
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -15,7 +18,7 @@ public class SearchTests {
     void successfulSearchTest() {
         open("https://www.google.com/");
         $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("https://ru.selenide.org"));
+        $("[id=search]").shouldHave(text("https://ru.selenide.org"), Duration.ofSeconds(30));
     }
 
     @Test
@@ -24,6 +27,7 @@ public class SearchTests {
         $("[name=q]").setValue("mos ru").pressEnter();
         $("[id=search]").shouldHave(text("Официальный сайт Мэра Москвы"));
     }
+
 
     @Test
     void successfulSearchMosRuViaYandex() {
