@@ -35,3 +35,10 @@ public class SearchTests {
         $("[id=search-result]").shouldHave(text("Официальный сайт Мэра Москвы"));
     }
 }
+
+
+
+
+
+
+
