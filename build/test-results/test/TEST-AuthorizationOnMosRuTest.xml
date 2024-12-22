@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AuthorizationOnMosRu" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-22T04:24:21" hostname="WIN-JG2J35FIO8M" time="16.061">
+<testsuite name="AuthorizationOnMosRuTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-22T05:04:49" hostname="WIN-JG2J35FIO8M" time="8.188">
   <properties/>
-  <testcase name="userAuthorizationOnMosRu()" classname="AuthorizationOnMosRu" time="16.061"/>
+  <testcase name="openingTheUserRegistrationPage()" classname="AuthorizationOnMosRuTest" time="8.188"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-дек. 22, 2024 7:24:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+дек. 22, 2024 8:04:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 131
-дек. 22, 2024 7:24:23 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+дек. 22, 2024 8:04:52 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 131.0.6778.205. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>
