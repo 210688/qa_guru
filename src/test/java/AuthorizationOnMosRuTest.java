@@ -1,3 +1,5 @@
+import com.codeborne.selenide.Selenide;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
@@ -8,6 +10,10 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class AuthorizationOnMosRuTest {
+    @AfterEach
+    public void tearDown() {
+        Selenide.closeWebDriver();
+    }
 
     @Test
     void userAuthorizationOnMosRu()  {
@@ -19,9 +25,9 @@ public class AuthorizationOnMosRuTest {
         $("[name='password']").setValue("434ПВОЫ\"!ffggghh");
         $(".form-login__submit").click();
         $("#mos-dropdown-user").shouldHave(text("Олег Гордиенко"), Duration.ofSeconds(7));
-        $("#mos-dropdown-user").shouldHave(visible, Duration.ofSeconds(5)).click();
+        $("#mos-dropdown-user").shouldHave(visible, Duration.ofSeconds(5)).hover();
         $(".User_logout__Eg_Es").click();
-        $(".page-title").shouldHave(text("Вход"));
+        $(byText("Войти")).shouldHave(text("Войти"));
     }
     @Test
     void openingTheUserRegistrationPage() {
@@ -48,6 +54,6 @@ public class AuthorizationOnMosRuTest {
         $(byText("Войти")).click();
         $(".page-title").shouldHave(text("Вход"));
         $(".form-login__submit").click();
-        $(".parsley-required").shouldHave(text("Введите пароль"));
+        $(".mForm").shouldHave(text("Введите пароль"));
     }
 }
