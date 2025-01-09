@@ -1,7 +1,9 @@
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
+
 import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
@@ -14,7 +16,7 @@ public class AuthorizationOnMosRuTest {
     }
 
     @Test
-    void userAuthorizationOnMosRu()  {
+    void userAuthorizationOnMosRu() {
         open("https://www.mos.ru/");
         $("#mos-header-title").shouldBe(visible);
         $(byText("Войти")).click();
@@ -27,6 +29,7 @@ public class AuthorizationOnMosRuTest {
         $(".User_logout__Eg_Es").click();
         $(byText("Войти")).shouldHave(text("Войти"));
     }
+
     @Test
     void openingTheUserRegistrationPage() {
         open("https://www.mos.ru/");
@@ -36,6 +39,7 @@ public class AuthorizationOnMosRuTest {
         $("#regEnter").click();
         $(".page-title").shouldHave(text("Регистрация"));
     }
+
     @Test
     void openingPasswordRecoveryPage() {
         open("https://www.mos.ru/");
@@ -45,6 +49,7 @@ public class AuthorizationOnMosRuTest {
         $("#recoveryEnter").click();
         $(".page-title").shouldHave(text("Восстановление пароля"));
     }
+
     @Test
     void authorizationWithEmptyFields() {
         open("https://www.mos.ru/");
